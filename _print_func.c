@@ -1,5 +1,16 @@
 #include "main.h"
-
+#include "print_chr.c"
+#include "print_str.c"
+#include "print_rev.c"
+#include "print_rot.c"
+#include "print_oct.c"
+#include "print_hex.c"
+#include "print_S.c"
+#include "perc_oper.c"
+#include "print_bnr.c"
+#include "arg.c"
+#include "helpers.c"
+#include "print_int.c"
 /**
  * print_func - main function.
  * @format: The dimension of the parameters passed.
