@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include "_putchar.c"
 /**
  * oper_char - main function
  * @y: The argument pointer.
@@ -14,4 +14,3 @@ int oper_char(va_list y)
 	_putchar(va_arg(y, int));
 	return (1);
 }
-
