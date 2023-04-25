@@ -1,2 +1,1 @@
-# printf
-My printf project repository
+0x11. C - printf
