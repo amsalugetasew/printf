@@ -3,11 +3,8 @@
  * _printf -  output conversion that prints data.
  * @format: is the input str.
  * @...: The parameters to print.
- *
- * Return: number of chars printed.
  * Return: The total number of characters printed.
  */
-
 int _printf(const char *format, ...)
 {
 	va_list arguments;
@@ -15,18 +12,15 @@ int _printf(const char *format, ...)
 
 	va_start(arguments, format);
 
-	if (!format || format[i] == '\n' || format[i] == '\0' ||
-	   (format[i] == '%' && !format[i + 1]))
+	if (!format || format[i] == '\n' || format[i] == '\0' ||(format[i] == '%' && !format[i + 1]))
 	{
 		return (-1);
 	}
-
 	while (format && format[i])
 	{
 		if (format[i] == '%')
 		{
 			count += print_func(&i, format, arguments);
-
 		}
 		else
 		{
@@ -38,4 +32,3 @@ int _printf(const char *format, ...)
 	va_end(arguments);
 	return (count);
 }
-
