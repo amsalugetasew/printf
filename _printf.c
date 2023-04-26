@@ -12,7 +12,8 @@ int _printf(const char *format, ...)
 
 	va_start(arguments, format);
 
-	if (!format || format[i] == '\n' || format[i] == '\0' ||(format[i] == '%' && !format[i + 1]))
+	if (!format || format[i] == '\n' || format[i] == '\0' ||
+			(format[i] == '%' && !format[i + 1]))
 	{
 		return (-1);
 	}
