@@ -1,5 +1,4 @@
 #include "main.h"
-#include "_putchar.c"
 /**
  * oper_char - main function
  * @y: The argument pointer.
